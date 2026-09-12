@@ -1,16 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Auth\LoginController;
 
-Route::get('/', function () {
-    return view('login');
+Route::get('/exercise-1', function () {
+    return view('exercise1');
 });
 
-// Render the login Blade view
-Route::get('/login', function () {
-    return view('auth.login');
-})->name('login');
+Route::get('/exercise-2', function () {
+    return view('exercise2');
+});
 
-// Process submission
-Route::post('/login', [LoginController::class, 'authenticate'])->name('login.perform');
+Route::get('/exercise-3', function () {
+    return view('exercise3');
+});
+
+Route::get('/exercise-4', function () {
+    return view('exercise4');
+});
