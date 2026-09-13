@@ -1,119 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 3 - Schedule</title>
 
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 3</title>
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
 </head>
 
 <body>
 
-<div class="container mt-5">
+<div class="container mt-4">
 
-    <h2 class="text-center mb-4">Class Schedule</h2>
-
+    <h2>Class Schedule</h2>
     <div class="row">
-
-        <!-- Main Area -->
-        <div class="col-12 col-md-8 mb-4">
-
-            <div class="card">
-
+        <div class="col-12 col-md-8">
+            <div class="card mb-3">
                 <div class="card-header">
                     Class Schedule
                 </div>
-
                 <div class="card-body">
+                    <table class="table">
+                <tr>
+                      <th>Subject</th>
+                       <th>Schedule</th>
+                       <th>Room</th>
+                       <th>Status</th>
+                </tr>
 
-                    <table class="table table-bordered table-striped">
+                 <tr>
+                   <td>Information Management</td>
+                    <td>Wednesday 7 AM</td>
+                    <td>Room 101</td>
+                    <td>Active</td>
+                 </tr>
 
-                        <thead>
-                            <tr>
-                                <th>Subject</th>
-                                <th>Schedule</th>
-                                <th>Room</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
+                <tr>
+                     <td>Data Structures</td>
+                    <td>Saturday 7 AM</td>
+                    <td>Room 102</td>
+                    <td>Active</td>
+                 </tr>
 
-                        <tbody>
-
-                            <tr>
-                                <td>Information Management</td>
-                                <td>Wednesday 7:00 AM - 10:00 AM</td>
-                                <td>Lab 1</td>
-                                <td>
-                                    <span class="badge bg-success">
-                                        Active
-                                    </span>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>Data Structures and Algorithms</td>
-                                <td>Saturday 7:00 AM - 10:00 AM</td>
-                                <td>Lab 2</td>
-                                <td>
-                                    <span class="badge bg-success">
-                                        Active
-                                    </span>
-                                </td>
-                            </tr>
-
-                        </tbody>
-
-                    </table>
-
-                </div>
+                 </table>
 
             </div>
 
         </div>
 
-
-        <!-- Sidebar -->
-        <div class="col-12 col-md-4 mb-4">
+        </div>
+        <div class="col-12 col-md-4">
 
             <div class="card">
-
                 <div class="card-header">
                     Announcements
                 </div>
-
                 <div class="card-body">
-
                     <div class="alert alert-warning">
-                        <strong>Reminder:</strong>
-                        Asynchronous session today!
+                        Reminder: Asynchronous session today!
                     </div>
-
-                    <h6>Announcements</h6>
-
                     <ul class="list-group">
-
-                        <li class="list-group-item">
-                            Submit your activity before the deadline.
+                 <li class="list-group-item">
+                     Submit your activity.
+                     </li>
+                     <li class="list-group-item">
+                            Check the LMS.
                         </li>
-
-                        <li class="list-group-item">
-                            Check the LMS for new announcements.
-                        </li>
-
                     </ul>
 
                 </div>
-
             </div>
-
-        </div>
+      </div>
 
     </div>
 
 </div>
 
-<script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-
 </body>
 </html>
+
