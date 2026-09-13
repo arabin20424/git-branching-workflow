@@ -2,15 +2,20 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegistrationController;
 
 Route::get('/', function () {
-    return view('login');
+    return view('register');
+
+Route::get('/register', [RegistrationController::class, 'showForm']);
+
+
 });
 
-// Render the login Blade view
+
 Route::get('/login', function () {
     return view('auth.login');
 })->name('login');
 
-// Process submission
+
 Route::post('/login', [LoginController::class, 'authenticate'])->name('login.perform');
