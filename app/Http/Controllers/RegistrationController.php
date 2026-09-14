@@ -1,11 +1,10 @@
-<?php 
-namespace App\Http\Controllers\Auth; 
+<?php
+namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-class registrationController extends Controller
+class RegistrationController extends Controller
 {
-    public function showRegistrationForm()
-    {
-        return view('auth.register');
-    }
-
+public function showForm()
+{
+return view('register');
+}
 }
