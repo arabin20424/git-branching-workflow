@@ -18,7 +18,7 @@
             <div class="card mb-3">
 
                 <div class="card-header">
-                    Juan Cruz
+                    Andrei Sanchez
                 </div>
 
                 <div class="card-body">
@@ -43,7 +43,7 @@
             <div class="card mb-3">
 
                 <div class="card-header">
-                    Maria Santos
+                    Abrielle Paraiso
                 </div>
 
                 <div class="card-body">
