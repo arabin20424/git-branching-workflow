@@ -19,12 +19,11 @@ Route::get('/login', function () {
 Route::post('/login', [LoginController::class, 'authenticate'])
     ->name('login.perform');
 
-<<<<<<< HEAD
 // Route to display form
 Route::get('/signup', [SignUpController::class, 'showForm']);
 // Route to process form submission
 Route::post('/signup', [SignUpController::class, 'submitForm']);
-=======
+
 // Registration routes
 Route::get('/register', [RegistrationController::class, 'showForm']);
 Route::post('/register', [RegistrationController::class, 'register']);
@@ -32,4 +31,4 @@ Route::post('/register', [RegistrationController::class, 'register']);
 // Signup routes
 Route::get('/signup', [SignUpController::class, 'showForm']);
 Route::post('/signup', [SignUpController::class, 'submitForm']);
->>>>>>> signup-form
+
