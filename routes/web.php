@@ -16,3 +16,8 @@ Route::get('/login', function () {
 
 Route::post('/login', [LoginController::class, 'authenticate'])
     ->name('login.perform');
+
+    // Route to display form
+Route::get('/signup', [SignUpController::class, 'showForm']);
+// Route to process form submission
+Route::post('/signup', [SignUpController::class, 'submitForm']);
