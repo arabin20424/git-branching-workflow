@@ -36,7 +36,7 @@ class="form-control @error('fullname') is-invalid
 
 @enderror"
 value="{{ old('fullname') }}"
-placeholder="Juan Dela Cruz">
+placeholder="Enter Full Name">
 <!-- REQUIREMENT 3: Displaying Validation Error -->
 
 @error('fullname')
@@ -53,7 +53,7 @@ id="email"
 class="form-control @error('email') is-invalid @enderror"
 
 value="{{ old('email') }}"
-placeholder="student@example.com">
+placeholder="Enter Email Address">
 @error('email')
 
 <div class="invalid-feedback">{{ $message }}</div>
