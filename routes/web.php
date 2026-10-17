@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\SignUpController;
+use App\Http\Controllers\EnrollmentController;
 
 // Home page
 Route::get('/', function () {
@@ -32,3 +33,6 @@ Route::post('/register', [RegistrationController::class, 'register']);
 Route::get('/signup', [SignUpController::class, 'showForm']);
 Route::post('/signup', [SignUpController::class, 'submitForm']);
 
+//Enrollment Routes
+Route::get('/enrollment', [EnrollmentController::class, 'showForm']);
+Route::post('/enrollment', [EnrollmentController::class, 'submitForm']);
